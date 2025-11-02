@@ -1,0 +1,34 @@
+\documentclass[a4paper,12pt]{article}
+
+% algorithm er jonno float type environment (caption, number etc.)
+\usepackage{algorithm}
+
+% algorithm er bhasha: \Procedure, \State, \If, \For ...
+\usepackage{algpseudocode}
+
+\begin{document}
+
+\title{A Simple Algorithm}    % document er title
+\maketitle                    % title dekhabo
+
+\section{Algorithm Section}   % just ekta section
+
+\begin{algorithm}             % figure er moto float
+  \caption{Algorithm to find the largest number}  % algorithm-er name
+  \begin{algorithmic}      % [1] dile line number dekhabe
+
+    % procedure er nam: Largest, duita input: a, b
+    \Procedure{Largest}{$a, b$}
+      \State Input $a$ and $b$               % step 1
+      \If{$a > b$}                           % jodi a b er cheye boro hoy
+        \State $max \gets a$                 % tahole max = a
+      \Else
+        \State $max \gets b$                 % na hole max = b
+      \EndIf
+      \State Display $max$                   % output dekhabo
+    \EndProcedure
+
+  \end{algorithmic}
+\end{algorithm}
+
+\end{document}

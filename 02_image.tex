@@ -1,0 +1,26 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\graphicspath{{./images/}}
+\begin{document}
+
+My image \ref{img}
+is here...
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{img.jpg}
+\caption{SRHridoy}
+\label{img}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \clip (0,0) circle (2cm);
+    \node at (0,0) {\includegraphics[width=4cm]{img.jpg}};
+    \draw (0,0) circle (2cm);
+  \end{tikzpicture}
+  \caption{Circle image}
+\end{figure}
+
+\end{document}
