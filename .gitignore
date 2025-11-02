@@ -1,0 +1,48 @@
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ind
+*.ilg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.run.xml
+
+# Build artifacts
+*.dvi
+*.ps
+# Uncomment to ignore generated PDFs
+# *.pdf
+
+# minted / Pygments caches
+_minted-*/
+*.pyg
+
+# Editor & OS temp files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE / project files
+.vscode/
+.idea/
+*.sublime-*
+
+# Python caches (if you use scripts)
+__pycache__/
+*.py[cod]
